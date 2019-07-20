@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">SetRootElementBehavior | renew-js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/renew-js/renew-js"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Modeler.js~Modeler.html">Modeler</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Simulator.js~Simulator.html">Simulator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewer.js~Viewer.html">Viewer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/Canvas.js~Canvas.html">Canvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/ElementRegistry.js~ElementRegistry.html">ElementRegistry</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/Injector.js~Injector.html">Injector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-command">core/command</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/Command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-command-behaviors">core/command/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/behaviors/RedoBehavior.js~RedoBehavior.html">RedoBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/behaviors/UndoBehavior.js~UndoBehavior.html">UndoBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-command-providers">core/command/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/providers/CommandStack.js~CommandStack.html">CommandStack</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-eventbus">core/eventBus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html">Behavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-eventbus-providers">core/eventBus/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/eventBus/providers/EventBus.js~EventBus.html">EventBus</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-policy">core/policy</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/policy/Rule.js~Rule.html">Rule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-policy-providers">core/policy/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/policy/providers/RulePolicy.js~RulePolicy.html">RulePolicy</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-toolbox">core/toolbox</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/Tool.js~Tool.html">Tool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-toolbox-behaviors">core/toolbox/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/AttachBehavior.js~AttachBehavior.html">AttachBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/DetachBehavior.js~DetachBehavior.html">DetachBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/DoubleClickBehavior.js~DoubleClickBehavior.html">DoubleClickBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/HoverBehavior.js~HoverBehavior.html">HoverBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/KeypressBehavior.js~KeypressBehavior.html">KeypressBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/OutBehavior.js~OutBehavior.html">OutBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/PreviousToolBehavior.js~PreviousToolBehavior.html">PreviousToolBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/SnappedBehavior.js~SnappedBehavior.html">SnappedBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/ToolManagerBehavior.js~ToolManagerBehavior.html">ToolManagerBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/ToolboxActivateBehavior.js~ToolboxActivateBehavior.html">ToolboxActivateBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-toolbox-providers">core/toolbox/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/providers/Toolbox.js~Toolbox.html">Toolbox</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-util">core/util</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uid">uid</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#draw">draw</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/HandleRenderer.js~HandleRenderer.html">HandleRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/Renderer.js~Renderer.html">Renderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/TextRenderer.js~TextRenderer.html">TextRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#draw-behaviors">draw/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/behaviors/SetRootElementBehavior.js~SetRootElementBehavior.html">SetRootElementBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-base-tools">features/base-tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/base-tools/BaseToolsPalette.js~BaseToolsPalette.html">BaseToolsPalette</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-connect-behaviors">features/connect/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/behaviors/ConnectPreviewBehavior.js~ConnectPreviewBehavior.html">ConnectPreviewBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-connect-providers">features/connect/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/providers/ConnectProvider.js~ConnectProvider.html">ConnectProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-connect-rules">features/connect/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/rules/ConnectSourceRule.js~ConnectSourceRule.html">ConnectSourceRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/rules/ConnectTargetRule.js~ConnectTargetRule.html">ConnectTargetRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-behaviors">features/create/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/behaviors/CreateConnectionBehavior.js~CreateConnectionBehavior.html">CreateConnectionBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/behaviors/CreateLabelBehavior.js~CreateLabelBehavior.html">CreateLabelBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/behaviors/CreateShapeBehavior.js~CreateShapeBehavior.html">CreateShapeBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-commands">features/create/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/commands/CreateConnectionCommand.js~CreateConnectionCommand.html">CreateConnectionCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/commands/CreateLabelCommand.js~CreateLabelCommand.html">CreateLabelCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/commands/CreateShapeCommand.js~CreateShapeCommand.html">CreateShapeCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-providers">features/create/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/providers/CreateProvider.js~CreateProvider.html">CreateProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-tools">features/create/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateConnectionTool.js~CreateConnectionTool.html">CreateConnectionTool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateLabelTool.js~CreateLabelTool.html">CreateLabelTool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateShapeTool.js~CreateShapeTool.html">CreateShapeTool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateTool.js~CreateTool.html">CreateTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-cursor-behaviors">features/cursor/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/cursor/behaviors/CursorSetBehavior.js~CursorSetBehavior.html">CursorSetBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/cursor/behaviors/CursorUnsetBehavior.js~CursorUnsetBehavior.html">CursorUnsetBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-cursor-providers">features/cursor/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/cursor/providers/CursorProvider.js~CursorProvider.html">CursorProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-behaviors">features/edit/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/behaviors/ActivateDefaultBehavior.js~ActivateDefaultBehavior.html">ActivateDefaultBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/behaviors/EditActivateBehavior.js~EditActivateBehavior.html">EditActivateBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/behaviors/EditCompleteBehavior.js~EditCompleteBehavior.html">EditCompleteBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-commands">features/edit/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/commands/EditLabelCommand.js~EditLabelCommand.html">EditLabelCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-providers">features/edit/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/providers/EditProvider.js~EditProvider.html">EditProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-tools">features/edit/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/tools/EditTool.js~EditTool.html">EditTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-export-behaviors">features/export/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/ExportBehavior.js~ExportBehavior.html">ExportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/JsonExportBehavior.js~JsonExportBehavior.html">JsonExportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/MetaExportBehavior.js~MetaExportBehavior.html">MetaExportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/SVGExportBehavior.js~SVGExportBehavior.html">SVGExportBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-export-providers">features/export/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/providers/Exporter.js~Exporter.html">Exporter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/providers/JsonSerializer.js~JsonSerializer.html">JsonSerializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/providers/SVGSerializer.js~SVGSerializer.html">SVGSerializer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-external-simulation-behaviors">features/external-simulation/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationStartBehavior.js~SimulationStartBehavior.html">SimulationStartBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationStepBehavior.js~SimulationStepBehavior.html">SimulationStepBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationStopBehavior.js~SimulationStopBehavior.html">SimulationStopBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationTerminateBehavior.js~SimulationTerminateBehavior.html">SimulationTerminateBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-external-simulation-providers">features/external-simulation/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/providers/ExternalSimulation.js~ExternalSimulation.html">ExternalSimulation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-factory-behaviors">features/factory/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/behaviors/FactoryResetBehavior.js~FactoryResetBehavior.html">FactoryResetBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/behaviors/FactorySetBehavior.js~FactorySetBehavior.html">FactorySetBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-factory-providers">features/factory/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/providers/DefaultFactory.js~DefaultFactory.html">DefaultFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/providers/ElementFactory.js~ElementFactory.html">ElementFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/providers/FactoryProvider.js~FactoryProvider.html">FactoryProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-hand-behaviors">features/hand/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/hand/behaviors/MoveCanvasBehavior.js~MoveCanvasBehavior.html">MoveCanvasBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-hand-providers">features/hand/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/hand/providers/HandProvider.js~HandProvider.html">HandProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-hand-tools">features/hand/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/hand/tools/HandTool.js~HandTool.html">HandTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-handle-behaviors">features/handle/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/behaviors/HandleBehavior.js~HandleBehavior.html">HandleBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/behaviors/HandlesHideBehavior.js~HandlesHideBehavior.html">HandlesHideBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/behaviors/HandlesShowBehavior.js~HandlesShowBehavior.html">HandlesShowBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-handle-providers">features/handle/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/providers/HandleFactory.js~HandleFactory.html">HandleFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/providers/HandleProvider.js~HandleProvider.html">HandleProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-import-behaviors">features/import/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/behaviors/ImportBehavior.js~ImportBehavior.html">ImportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/behaviors/JsonImportBehavior.js~JsonImportBehavior.html">JsonImportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/behaviors/MetaImportBehavior.js~MetaImportBehavior.html">MetaImportBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-import-providers">features/import/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/providers/Importer.js~Importer.html">Importer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/providers/JsonParser.js~JsonParser.html">JsonParser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-keyboard-events-behaviors">features/keyboard-events/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/keyboard-events/behaviors/AttachBehavior.js~AttachBehavior.html">AttachBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/keyboard-events/behaviors/DetachBehavior.js~DetachBehavior.html">DetachBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-keyboard-events-providers">features/keyboard-events/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/keyboard-events/providers/KeyboardEvents.js~KeyboardEvents.html">KeyboardEvents</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-layouter-providers">features/layouter/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/layouter/providers/MetaLayouter.js~MetaLayouter.html">MetaLayouter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-marker-behaviors">features/marker/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/marker/behaviors/MarkerClearBehavior.js~MarkerClearBehavior.html">MarkerClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/marker/behaviors/MarkerSetBehavior.js~MarkerSetBehavior.html">MarkerSetBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-marker-providers">features/marker/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/marker/providers/MarkerProvider.js~MarkerProvider.html">MarkerProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-factory-providers">features/meta-factory/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-factory/providers/MetaFactory.js~MetaFactory.html">MetaFactory</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-formalism-behaviors">features/meta-formalism/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-formalism-providers">features/meta-formalism/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/providers/MetaPluginManager.js~MetaPluginManager.html">MetaPluginManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-formalism-rules">features/meta-formalism/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/rules/ConnectSourceRule.js~ConnectSourceRule.html">ConnectSourceRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/rules/ConnectTargetRule.js~ConnectTargetRule.html">ConnectTargetRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/rules/MoveElementRule.js~MoveElementRule.html">MoveElementRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-label-editing">features/meta-label-editing</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-label-editing/MetaLabelEditing.js~MetaLabelEditing.html">MetaLabelEditing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-label-editing-behabiors">features/meta-label-editing/behabiors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-label-editing/behabiors/DoubleClickBehavior.js~DoubleClickBehavior.html">DoubleClickBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-label-editing-commands">features/meta-label-editing/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-label-editing/commands/SaveLabelCommand.js~SaveLabelCommand.html">SaveLabelCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-simulation-providers">features/meta-simulation/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-simulation/providers/MetaSimulation.js~MetaSimulation.html">MetaSimulation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-tools">features/meta-tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/MetaContextPad.js~MetaContextPad.html">MetaContextPad</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/MetaPalette.js~MetaPalette.html">MetaPalette</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/MetaRules.js~MetaRules.html">MetaRules</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-tools-behaviors">features/meta-tools/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-tools-rules">features/meta-tools/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/rules/ConnectionCreateRule.js~ConnectionCreateRule.html">ConnectionCreateRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/rules/ConnectionStartRule.js~ConnectionStartRule.html">ConnectionStartRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-behaviors">features/move/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/behaviors/MoveBehavior.js~MoveBehavior.html">MoveBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/behaviors/MovePreviewBehavior.js~MovePreviewBehavior.html">MovePreviewBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-commands">features/move/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/commands/MoveByCommand.js~MoveByCommand.html">MoveByCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/commands/MoveElementsCommand.js~MoveElementsCommand.html">MoveElementsCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/commands/MoveToCommand.js~MoveToCommand.html">MoveToCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-providers">features/move/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/providers/MoveProvider.js~MoveProvider.html">MoveProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-rules">features/move/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/rules/MoveElementsRule.js~MoveElementsRule.html">MoveElementsRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-orientation">features/orientation</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/AbsoluteOrientation.js~AbsoluteOrientation.html">AbsoluteOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/CardinalOrientation.js~CardinalOrientation.html">CardinalOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/CenterOrientation.js~CenterOrientation.html">CenterOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/FigureOrientation.js~FigureOrientation.html">FigureOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/Orientation.js~Orientation.html">Orientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/OrientationFactory.js~OrientationFactory.html">OrientationFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/RadialOrientation.js~RadialOrientation.html">RadialOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/RelativeOrientation.js~RelativeOrientation.html">RelativeOrientation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-pointer-behaviors">features/pointer/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/pointer/behaviors/SelectBehavior.js~SelectBehavior.html">SelectBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-pointer-providers">features/pointer/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/pointer/providers/PointerProvider.js~PointerProvider.html">PointerProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-pointer-tools">features/pointer/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/pointer/tools/PointerTool.js~PointerTool.html">PointerTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-preview-behaviors">features/preview/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/behaviors/PreviewClearBehavior.js~PreviewClearBehavior.html">PreviewClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/behaviors/PreviewInitBehavior.js~PreviewInitBehavior.html">PreviewInitBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/behaviors/PreviewMoveBehavior.js~PreviewMoveBehavior.html">PreviewMoveBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-preview-providers">features/preview/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/providers/PreviewProvider.js~PreviewProvider.html">PreviewProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-remove-behaviors">features/remove/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/behaviors/KeypressBehavior.js~KeypressBehavior.html">KeypressBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/behaviors/RemoveElementsBehavior.js~RemoveElementsBehavior.html">RemoveElementsBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-remove-commands">features/remove/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/commands/RemoveElementsCommand.js~RemoveElementsCommand.html">RemoveElementsCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-remove-providers">features/remove/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/providers/RemoveProvider.js~RemoveProvider.html">RemoveProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-behaviors">features/resize/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/behaviors/ResizeElementBehavior.js~ResizeElementBehavior.html">ResizeElementBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-commands">features/resize/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/commands/ResizeElementCommand.js~ResizeElementCommand.html">ResizeElementCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-providers">features/resize/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/providers/ResizeProvider.js~ResizeProvider.html">ResizeProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-rules">features/resize/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/rules/ResizeElementRule.js~ResizeElementRule.html">ResizeElementRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-rubber-band-behaviors">features/rubber-band/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/behaviors/LeaveCanvasBehavior.js~LeaveCanvasBehavior.html">LeaveCanvasBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/behaviors/PreviewBehavior.js~PreviewBehavior.html">PreviewBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/behaviors/SelectSurroundedBehavior.js~SelectSurroundedBehavior.html">SelectSurroundedBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-rubber-band-providers">features/rubber-band/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/providers/RubberBandProvider.js~RubberBandProvider.html">RubberBandProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-selection-behaviors">features/selection/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/MoveElementsBehavior.js~MoveElementsBehavior.html">MoveElementsBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectAllBehavior.js~SelectAllBehavior.html">SelectAllBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectedBehavior.js~SelectedBehavior.html">SelectedBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectionAddBehavior.js~SelectionAddBehavior.html">SelectionAddBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectionClearBehavior.js~SelectionClearBehavior.html">SelectionClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectionRemoveBehavior.js~SelectionRemoveBehavior.html">SelectionRemoveBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-selection-providers">features/selection/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/providers/SelectionHandlesProvider.js~SelectionHandlesProvider.html">SelectionHandlesProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/providers/SelectionProvider.js~SelectionProvider.html">SelectionProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-simulation-manager-behaviors">features/simulation-manager/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/simulation-manager/behaviors/SimulationStartBehavior.js~SimulationStartBehavior.html">SimulationStartBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-simulation-manager-providers">features/simulation-manager/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/simulation-manager/providers/SimulationManager.js~SimulationManager.html">SimulationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-snapping-behaviors">features/snapping/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/behaviors/SnapBehavior.js~SnapBehavior.html">SnapBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/behaviors/SnappingClearBehavior.js~SnappingClearBehavior.html">SnappingClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/behaviors/SnappingInitBehavior.js~SnappingInitBehavior.html">SnappingInitBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-snapping-providers">features/snapping/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/providers/SnappingProvider.js~SnappingProvider.html">SnappingProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-zoom-behaviors">features/zoom/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/zoom/behaviors/ZoomInBehavior.js~ZoomInBehavior.html">ZoomInBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/zoom/behaviors/ZoomOutBehavior.js~ZoomOutBehavior.html">ZoomOutBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-zoom-providers">features/zoom/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/zoom/providers/ZoomProvider.js~ZoomProvider.html">ZoomProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util">util</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/util/Geometry.js~Geometry.html">Geometry</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/util/PathParser.js~PathParser.html">PathParser</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="header-notice">
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {SetRootElementBehavior} from &apos;<span><a href="file/src/draw/behaviors/SetRootElementBehavior.js.html#lineNumber4">renew-js/src/draw/behaviors/SetRootElementBehavior.js</a></span>&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  <span data-ice="source">| <span><a href="file/src/draw/behaviors/SetRootElementBehavior.js.html#lineNumber4">source</a></span></span>
+</div>
+
+<div class="self-detail detail">
+  <h1 data-ice="name">SetRootElementBehavior</h1>
+
+  
+
+  
+  
+  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html">Behavior</a></span> &#x2192; SetRootElementBehavior</div></div>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+
+
+<div data-ice="constructorSummary"><h2>Constructor Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Constructor</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/draw/behaviors/SetRootElementBehavior.js~SetRootElementBehavior.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/draw/behaviors/SetRootElementBehavior.js~SetRootElementBehavior.html#instance-member-canvas">canvas</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="methodSummary"><h2>Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/draw/behaviors/SetRootElementBehavior.js~SetRootElementBehavior.html#instance-method-during">during</a></span></span><span class="code" data-ice="signature">(context: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<div class="inherited-summary" data-ice="inheritedSummary"><h2>Inherited Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/src/core/eventBus/Behavior.js~Behavior.html">Behavior</a></span></td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html#instance-method-after">after</a></span></span><span class="code" data-ice="signature">(event: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html#instance-method-before">before</a></span></span><span class="code" data-ice="signature">(event: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html#instance-method-during">during</a></span></span><span class="code" data-ice="signature">(event: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+<div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-constructor-constructor">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/draw/behaviors/SetRootElementBehavior.js.html#lineNumber6">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-canvas">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">canvas</span><span class="code" data-ice="signature">: <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/draw/behaviors/SetRootElementBehavior.js.html#lineNumber8">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-during">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">during</span><span class="code" data-ice="signature">(context: <span>*</span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/draw/behaviors/SetRootElementBehavior.js.html#lineNumber11">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html#instance-method-during">Behavior#during</a></span></div>
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">context</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

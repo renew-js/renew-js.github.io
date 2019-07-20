@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href>
+  <title data-ice="title">Source | renew-js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/renew-js/renew-js"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Modeler.js~Modeler.html">Modeler</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Simulator.js~Simulator.html">Simulator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewer.js~Viewer.html">Viewer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/Canvas.js~Canvas.html">Canvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/ElementRegistry.js~ElementRegistry.html">ElementRegistry</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/Injector.js~Injector.html">Injector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-command">core/command</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/Command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-command-behaviors">core/command/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/behaviors/RedoBehavior.js~RedoBehavior.html">RedoBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/behaviors/UndoBehavior.js~UndoBehavior.html">UndoBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-command-providers">core/command/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/command/providers/CommandStack.js~CommandStack.html">CommandStack</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-eventbus">core/eventBus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html">Behavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-eventbus-providers">core/eventBus/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/eventBus/providers/EventBus.js~EventBus.html">EventBus</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-policy">core/policy</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/policy/Rule.js~Rule.html">Rule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-policy-providers">core/policy/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/policy/providers/RulePolicy.js~RulePolicy.html">RulePolicy</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-toolbox">core/toolbox</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/Tool.js~Tool.html">Tool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-toolbox-behaviors">core/toolbox/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/AttachBehavior.js~AttachBehavior.html">AttachBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/DetachBehavior.js~DetachBehavior.html">DetachBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/DoubleClickBehavior.js~DoubleClickBehavior.html">DoubleClickBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/HoverBehavior.js~HoverBehavior.html">HoverBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/KeypressBehavior.js~KeypressBehavior.html">KeypressBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/OutBehavior.js~OutBehavior.html">OutBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/PreviousToolBehavior.js~PreviousToolBehavior.html">PreviousToolBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/SnappedBehavior.js~SnappedBehavior.html">SnappedBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/ToolManagerBehavior.js~ToolManagerBehavior.html">ToolManagerBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/behaviors/ToolboxActivateBehavior.js~ToolboxActivateBehavior.html">ToolboxActivateBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-toolbox-providers">core/toolbox/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/toolbox/providers/Toolbox.js~Toolbox.html">Toolbox</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-util">core/util</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uid">uid</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#draw">draw</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/HandleRenderer.js~HandleRenderer.html">HandleRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/Renderer.js~Renderer.html">Renderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/TextRenderer.js~TextRenderer.html">TextRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#draw-behaviors">draw/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/draw/behaviors/SetRootElementBehavior.js~SetRootElementBehavior.html">SetRootElementBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-base-tools">features/base-tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/base-tools/BaseToolsPalette.js~BaseToolsPalette.html">BaseToolsPalette</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-connect-behaviors">features/connect/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/behaviors/ConnectPreviewBehavior.js~ConnectPreviewBehavior.html">ConnectPreviewBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-connect-providers">features/connect/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/providers/ConnectProvider.js~ConnectProvider.html">ConnectProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-connect-rules">features/connect/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/rules/ConnectSourceRule.js~ConnectSourceRule.html">ConnectSourceRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/connect/rules/ConnectTargetRule.js~ConnectTargetRule.html">ConnectTargetRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-behaviors">features/create/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/behaviors/CreateConnectionBehavior.js~CreateConnectionBehavior.html">CreateConnectionBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/behaviors/CreateLabelBehavior.js~CreateLabelBehavior.html">CreateLabelBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/behaviors/CreateShapeBehavior.js~CreateShapeBehavior.html">CreateShapeBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-commands">features/create/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/commands/CreateConnectionCommand.js~CreateConnectionCommand.html">CreateConnectionCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/commands/CreateLabelCommand.js~CreateLabelCommand.html">CreateLabelCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/commands/CreateShapeCommand.js~CreateShapeCommand.html">CreateShapeCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-providers">features/create/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/providers/CreateProvider.js~CreateProvider.html">CreateProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-create-tools">features/create/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateConnectionTool.js~CreateConnectionTool.html">CreateConnectionTool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateLabelTool.js~CreateLabelTool.html">CreateLabelTool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateShapeTool.js~CreateShapeTool.html">CreateShapeTool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/create/tools/CreateTool.js~CreateTool.html">CreateTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-cursor-behaviors">features/cursor/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/cursor/behaviors/CursorSetBehavior.js~CursorSetBehavior.html">CursorSetBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/cursor/behaviors/CursorUnsetBehavior.js~CursorUnsetBehavior.html">CursorUnsetBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-cursor-providers">features/cursor/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/cursor/providers/CursorProvider.js~CursorProvider.html">CursorProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-behaviors">features/edit/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/behaviors/ActivateDefaultBehavior.js~ActivateDefaultBehavior.html">ActivateDefaultBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/behaviors/EditActivateBehavior.js~EditActivateBehavior.html">EditActivateBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/behaviors/EditCompleteBehavior.js~EditCompleteBehavior.html">EditCompleteBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-commands">features/edit/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/commands/EditLabelCommand.js~EditLabelCommand.html">EditLabelCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-providers">features/edit/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/providers/EditProvider.js~EditProvider.html">EditProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-edit-tools">features/edit/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/edit/tools/EditTool.js~EditTool.html">EditTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-export-behaviors">features/export/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/ExportBehavior.js~ExportBehavior.html">ExportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/JsonExportBehavior.js~JsonExportBehavior.html">JsonExportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/MetaExportBehavior.js~MetaExportBehavior.html">MetaExportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/behaviors/SVGExportBehavior.js~SVGExportBehavior.html">SVGExportBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-export-providers">features/export/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/providers/Exporter.js~Exporter.html">Exporter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/providers/JsonSerializer.js~JsonSerializer.html">JsonSerializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/export/providers/SVGSerializer.js~SVGSerializer.html">SVGSerializer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-external-simulation-behaviors">features/external-simulation/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationStartBehavior.js~SimulationStartBehavior.html">SimulationStartBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationStepBehavior.js~SimulationStepBehavior.html">SimulationStepBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationStopBehavior.js~SimulationStopBehavior.html">SimulationStopBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/behaviors/SimulationTerminateBehavior.js~SimulationTerminateBehavior.html">SimulationTerminateBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-external-simulation-providers">features/external-simulation/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/external-simulation/providers/ExternalSimulation.js~ExternalSimulation.html">ExternalSimulation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-factory-behaviors">features/factory/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/behaviors/FactoryResetBehavior.js~FactoryResetBehavior.html">FactoryResetBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/behaviors/FactorySetBehavior.js~FactorySetBehavior.html">FactorySetBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-factory-providers">features/factory/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/providers/DefaultFactory.js~DefaultFactory.html">DefaultFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/providers/ElementFactory.js~ElementFactory.html">ElementFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/factory/providers/FactoryProvider.js~FactoryProvider.html">FactoryProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-hand-behaviors">features/hand/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/hand/behaviors/MoveCanvasBehavior.js~MoveCanvasBehavior.html">MoveCanvasBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-hand-providers">features/hand/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/hand/providers/HandProvider.js~HandProvider.html">HandProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-hand-tools">features/hand/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/hand/tools/HandTool.js~HandTool.html">HandTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-handle-behaviors">features/handle/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/behaviors/HandleBehavior.js~HandleBehavior.html">HandleBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/behaviors/HandlesHideBehavior.js~HandlesHideBehavior.html">HandlesHideBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/behaviors/HandlesShowBehavior.js~HandlesShowBehavior.html">HandlesShowBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-handle-providers">features/handle/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/providers/HandleFactory.js~HandleFactory.html">HandleFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/handle/providers/HandleProvider.js~HandleProvider.html">HandleProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-import-behaviors">features/import/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/behaviors/ImportBehavior.js~ImportBehavior.html">ImportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/behaviors/JsonImportBehavior.js~JsonImportBehavior.html">JsonImportBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/behaviors/MetaImportBehavior.js~MetaImportBehavior.html">MetaImportBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-import-providers">features/import/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/providers/Importer.js~Importer.html">Importer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/import/providers/JsonParser.js~JsonParser.html">JsonParser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-keyboard-events-behaviors">features/keyboard-events/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/keyboard-events/behaviors/AttachBehavior.js~AttachBehavior.html">AttachBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/keyboard-events/behaviors/DetachBehavior.js~DetachBehavior.html">DetachBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-keyboard-events-providers">features/keyboard-events/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/keyboard-events/providers/KeyboardEvents.js~KeyboardEvents.html">KeyboardEvents</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-layouter-providers">features/layouter/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/layouter/providers/MetaLayouter.js~MetaLayouter.html">MetaLayouter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-marker-behaviors">features/marker/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/marker/behaviors/MarkerClearBehavior.js~MarkerClearBehavior.html">MarkerClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/marker/behaviors/MarkerSetBehavior.js~MarkerSetBehavior.html">MarkerSetBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-marker-providers">features/marker/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/marker/providers/MarkerProvider.js~MarkerProvider.html">MarkerProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-factory-providers">features/meta-factory/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-factory/providers/MetaFactory.js~MetaFactory.html">MetaFactory</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-formalism-behaviors">features/meta-formalism/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-formalism-providers">features/meta-formalism/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/providers/MetaPluginManager.js~MetaPluginManager.html">MetaPluginManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-formalism-rules">features/meta-formalism/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/rules/ConnectSourceRule.js~ConnectSourceRule.html">ConnectSourceRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/rules/ConnectTargetRule.js~ConnectTargetRule.html">ConnectTargetRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-formalism/rules/MoveElementRule.js~MoveElementRule.html">MoveElementRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-label-editing">features/meta-label-editing</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-label-editing/MetaLabelEditing.js~MetaLabelEditing.html">MetaLabelEditing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-label-editing-behabiors">features/meta-label-editing/behabiors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-label-editing/behabiors/DoubleClickBehavior.js~DoubleClickBehavior.html">DoubleClickBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-label-editing-commands">features/meta-label-editing/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-label-editing/commands/SaveLabelCommand.js~SaveLabelCommand.html">SaveLabelCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-simulation-providers">features/meta-simulation/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-simulation/providers/MetaSimulation.js~MetaSimulation.html">MetaSimulation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-tools">features/meta-tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/MetaContextPad.js~MetaContextPad.html">MetaContextPad</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/MetaPalette.js~MetaPalette.html">MetaPalette</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/MetaRules.js~MetaRules.html">MetaRules</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-tools-behaviors">features/meta-tools/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-meta-tools-rules">features/meta-tools/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/rules/ConnectionCreateRule.js~ConnectionCreateRule.html">ConnectionCreateRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/meta-tools/rules/ConnectionStartRule.js~ConnectionStartRule.html">ConnectionStartRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-behaviors">features/move/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/behaviors/MoveBehavior.js~MoveBehavior.html">MoveBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/behaviors/MovePreviewBehavior.js~MovePreviewBehavior.html">MovePreviewBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-commands">features/move/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/commands/MoveByCommand.js~MoveByCommand.html">MoveByCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/commands/MoveElementsCommand.js~MoveElementsCommand.html">MoveElementsCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/commands/MoveToCommand.js~MoveToCommand.html">MoveToCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-providers">features/move/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/providers/MoveProvider.js~MoveProvider.html">MoveProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-move-rules">features/move/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/move/rules/MoveElementsRule.js~MoveElementsRule.html">MoveElementsRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-orientation">features/orientation</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/AbsoluteOrientation.js~AbsoluteOrientation.html">AbsoluteOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/CardinalOrientation.js~CardinalOrientation.html">CardinalOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/CenterOrientation.js~CenterOrientation.html">CenterOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/FigureOrientation.js~FigureOrientation.html">FigureOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/Orientation.js~Orientation.html">Orientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/OrientationFactory.js~OrientationFactory.html">OrientationFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/RadialOrientation.js~RadialOrientation.html">RadialOrientation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/orientation/RelativeOrientation.js~RelativeOrientation.html">RelativeOrientation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-pointer-behaviors">features/pointer/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/pointer/behaviors/SelectBehavior.js~SelectBehavior.html">SelectBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-pointer-providers">features/pointer/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/pointer/providers/PointerProvider.js~PointerProvider.html">PointerProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-pointer-tools">features/pointer/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/pointer/tools/PointerTool.js~PointerTool.html">PointerTool</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-preview-behaviors">features/preview/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/behaviors/PreviewClearBehavior.js~PreviewClearBehavior.html">PreviewClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/behaviors/PreviewInitBehavior.js~PreviewInitBehavior.html">PreviewInitBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/behaviors/PreviewMoveBehavior.js~PreviewMoveBehavior.html">PreviewMoveBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-preview-providers">features/preview/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/preview/providers/PreviewProvider.js~PreviewProvider.html">PreviewProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-remove-behaviors">features/remove/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/behaviors/KeypressBehavior.js~KeypressBehavior.html">KeypressBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/behaviors/RemoveElementsBehavior.js~RemoveElementsBehavior.html">RemoveElementsBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-remove-commands">features/remove/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/commands/RemoveElementsCommand.js~RemoveElementsCommand.html">RemoveElementsCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-remove-providers">features/remove/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/remove/providers/RemoveProvider.js~RemoveProvider.html">RemoveProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-behaviors">features/resize/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/behaviors/ResizeElementBehavior.js~ResizeElementBehavior.html">ResizeElementBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-commands">features/resize/commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/commands/ResizeElementCommand.js~ResizeElementCommand.html">ResizeElementCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-providers">features/resize/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/providers/ResizeProvider.js~ResizeProvider.html">ResizeProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-resize-rules">features/resize/rules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/resize/rules/ResizeElementRule.js~ResizeElementRule.html">ResizeElementRule</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-rubber-band-behaviors">features/rubber-band/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/behaviors/LeaveCanvasBehavior.js~LeaveCanvasBehavior.html">LeaveCanvasBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/behaviors/PreviewBehavior.js~PreviewBehavior.html">PreviewBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/behaviors/SelectSurroundedBehavior.js~SelectSurroundedBehavior.html">SelectSurroundedBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-rubber-band-providers">features/rubber-band/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/rubber-band/providers/RubberBandProvider.js~RubberBandProvider.html">RubberBandProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-selection-behaviors">features/selection/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/MoveElementsBehavior.js~MoveElementsBehavior.html">MoveElementsBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectAllBehavior.js~SelectAllBehavior.html">SelectAllBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectedBehavior.js~SelectedBehavior.html">SelectedBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectionAddBehavior.js~SelectionAddBehavior.html">SelectionAddBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectionClearBehavior.js~SelectionClearBehavior.html">SelectionClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/behaviors/SelectionRemoveBehavior.js~SelectionRemoveBehavior.html">SelectionRemoveBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-selection-providers">features/selection/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/providers/SelectionHandlesProvider.js~SelectionHandlesProvider.html">SelectionHandlesProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/selection/providers/SelectionProvider.js~SelectionProvider.html">SelectionProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-simulation-manager-behaviors">features/simulation-manager/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/simulation-manager/behaviors/SimulationStartBehavior.js~SimulationStartBehavior.html">SimulationStartBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-simulation-manager-providers">features/simulation-manager/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/simulation-manager/providers/SimulationManager.js~SimulationManager.html">SimulationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-snapping-behaviors">features/snapping/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/behaviors/SnapBehavior.js~SnapBehavior.html">SnapBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/behaviors/SnappingClearBehavior.js~SnappingClearBehavior.html">SnappingClearBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/behaviors/SnappingInitBehavior.js~SnappingInitBehavior.html">SnappingInitBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-snapping-providers">features/snapping/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/snapping/providers/SnappingProvider.js~SnappingProvider.html">SnappingProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-zoom-behaviors">features/zoom/behaviors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/zoom/behaviors/ZoomInBehavior.js~ZoomInBehavior.html">ZoomInBehavior</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/zoom/behaviors/ZoomOutBehavior.js~ZoomOutBehavior.html">ZoomOutBehavior</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#features-zoom-providers">features/zoom/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/features/zoom/providers/ZoomProvider.js~ZoomProvider.html">ZoomProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#util">util</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/util/Geometry.js~Geometry.html">Geometry</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/util/PathParser.js~PathParser.html">PathParser</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">36/1043</span></h1>
+
+<table class="files-summary" data-ice="files" data-use-coverage="true">
+  <thead>
+    <tr>
+      <td>File</td>
+      <td>Identifier</td>
+      <td class="coverage">Document</td>
+      <td style="display: none;">Size</td>
+      <td style="display: none;">Lines</td>
+      <td style="display: none;">Updated</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+  <tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Modeler.js.html#errorLines=14,16">src/Modeler.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Modeler.js~Modeler.html">Modeler</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">1143 byte</td>
+      <td style="display: none;" data-ice="lines">40</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Simulator.js.html#errorLines=12,23,27">src/Simulator.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Simulator.js~Simulator.html">Simulator</a></span></td>
+      <td class="coverage"><span data-ice="coverage">25 %</span><span data-ice="coverageCount" class="coverage-count">1/4</span></td>
+      <td style="display: none;" data-ice="size">564 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Viewer.js.html#errorLines=14,16,36,37,40,52,66,70,74,78">src/Viewer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Viewer.js~Viewer.html">Viewer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">2187 byte</td>
+      <td style="display: none;" data-ice="lines">85</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 16:21:15 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/Canvas.js.html#errorLines=10,12,14,15,16,19,23,27,34,38,44,51,55,63">src/core/Canvas.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/Canvas.js~Canvas.html">Canvas</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/14</span></td>
+      <td style="display: none;" data-ice="size">1911 byte</td>
+      <td style="display: none;" data-ice="lines">79</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:13:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/ElementRegistry.js.html#errorLines=4,6">src/core/ElementRegistry.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/ElementRegistry.js~ElementRegistry.html">ElementRegistry</a></span></td>
+      <td class="coverage"><span data-ice="coverage">33 %</span><span data-ice="coverageCount" class="coverage-count">1/3</span></td>
+      <td style="display: none;" data-ice="size">367 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/Injector.js.html#errorLines=10,11,119,13,136,141,156,170,37,39,4,46,47,48,49,50,51,52,55,6,63,7,72,8,81,9,91">src/core/Injector.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/Injector.js~Injector.html">Injector</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/27</span></td>
+      <td style="display: none;" data-ice="size">4671 byte</td>
+      <td style="display: none;" data-ice="lines">175</td>
+      <td style="display: none;" data-ice="updated">2019-07-06 10:46:57 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/command/Command.js.html#errorLines=9">src/core/command/Command.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/command/Command.js~Command.html">Command</a></span></td>
+      <td class="coverage"><span data-ice="coverage">85 %</span><span data-ice="coverageCount" class="coverage-count">6/7</span></td>
+      <td style="display: none;" data-ice="size">648 byte</td>
+      <td style="display: none;" data-ice="lines">43</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/command/behaviors/RedoBehavior.js.html#errorLines=11,4,6,8">src/core/command/behaviors/RedoBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/command/behaviors/RedoBehavior.js~RedoBehavior.html">RedoBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">263 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/command/behaviors/UndoBehavior.js.html#errorLines=11,4,6,8">src/core/command/behaviors/UndoBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/command/behaviors/UndoBehavior.js~UndoBehavior.html">UndoBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">263 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/command/index.js.html">src/core/command/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">418 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/command/providers/CommandStack.js.html#errorLines=10,107,111,24,4,44,6,61">src/core/command/providers/CommandStack.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/command/providers/CommandStack.js~CommandStack.html">CommandStack</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">2937 byte</td>
+      <td style="display: none;" data-ice="lines">115</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/eventBus/Behavior.js.html">src/core/eventBus/Behavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/eventBus/Behavior.js~Behavior.html">Behavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">255 byte</td>
+      <td style="display: none;" data-ice="lines">22</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/eventBus/index.js.html">src/core/eventBus/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">169 byte</td>
+      <td style="display: none;" data-ice="lines">11</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/eventBus/providers/EventBus.js.html#errorLines=10,28,4,6">src/core/eventBus/providers/EventBus.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/eventBus/providers/EventBus.js~EventBus.html">EventBus</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">1649 byte</td>
+      <td style="display: none;" data-ice="lines">58</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/index.js.html">src/core/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">545 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/policy/Rule.js.html">src/core/policy/Rule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/policy/Rule.js~Rule.html">Rule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
+      <td style="display: none;" data-ice="size">136 byte</td>
+      <td style="display: none;" data-ice="lines">12</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/policy/index.js.html">src/core/policy/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">182 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2019-05-07 10:40:52 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/policy/providers/RulePolicy.js.html#errorLines=1,3,4,7">src/core/policy/providers/RulePolicy.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/policy/providers/RulePolicy.js~RulePolicy.html">RulePolicy</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">660 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2019-05-07 10:40:52 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/Tool.js.html#errorLines=6">src/core/toolbox/Tool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/Tool.js~Tool.html">Tool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">90 %</span><span data-ice="coverageCount" class="coverage-count">9/10</span></td>
+      <td style="display: none;" data-ice="size">735 byte</td>
+      <td style="display: none;" data-ice="lines">55</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/AttachBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/AttachBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/AttachBehavior.js~AttachBehavior.html">AttachBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">248 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/DetachBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/DetachBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/DetachBehavior.js~DetachBehavior.html">DetachBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">291 byte</td>
+      <td style="display: none;" data-ice="lines">16</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/DoubleClickBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/DoubleClickBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/DoubleClickBehavior.js~DoubleClickBehavior.html">DoubleClickBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">264 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/HoverBehavior.js.html#errorLines=11,16,4,6,8">src/core/toolbox/behaviors/HoverBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/HoverBehavior.js~HoverBehavior.html">HoverBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">366 byte</td>
+      <td style="display: none;" data-ice="lines">20</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/KeypressBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/KeypressBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/KeypressBehavior.js~KeypressBehavior.html">KeypressBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">510 byte</td>
+      <td style="display: none;" data-ice="lines">24</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/OutBehavior.js.html#errorLines=11,16,4,6,8">src/core/toolbox/behaviors/OutBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/OutBehavior.js~OutBehavior.html">OutBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">348 byte</td>
+      <td style="display: none;" data-ice="lines">20</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/PreviousToolBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/PreviousToolBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/PreviousToolBehavior.js~PreviousToolBehavior.html">PreviousToolBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">263 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/SnappedBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/SnappedBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/SnappedBehavior.js~SnappedBehavior.html">SnappedBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">306 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/ToolManagerBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/ToolManagerBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/ToolManagerBehavior.js~ToolManagerBehavior.html">ToolManagerBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">263 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/behaviors/ToolboxActivateBehavior.js.html#errorLines=11,4,6,8">src/core/toolbox/behaviors/ToolboxActivateBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/behaviors/ToolboxActivateBehavior.js~ToolboxActivateBehavior.html">ToolboxActivateBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">268 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/index.js.html">src/core/toolbox/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1442 byte</td>
+      <td style="display: none;" data-ice="lines">36</td>
+      <td style="display: none;" data-ice="updated">2019-05-06 21:11:57 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/toolbox/providers/Toolbox.js.html#errorLines=10,11,111,12,120,128,13,136,14,144,156,16,17,18,185,19,195,199,20,21,22,24,25,26,29,38,4,47,51,56,6,7,8,81,88,96">src/core/toolbox/providers/Toolbox.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/core/toolbox/providers/Toolbox.js~Toolbox.html">Toolbox</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/36</span></td>
+      <td style="display: none;" data-ice="size">5985 byte</td>
+      <td style="display: none;" data-ice="lines">203</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/core/util/Uid.js.html#errorLines=1">src/core/util/Uid.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-uid">uid</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">197 byte</td>
+      <td style="display: none;" data-ice="lines">7</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/draw/HandleRenderer.js.html#errorLines=11,15,4,6,8">src/draw/HandleRenderer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/draw/HandleRenderer.js~HandleRenderer.html">HandleRenderer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">337 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/draw/Renderer.js.html#errorLines=10,11,14,36,41,48,6,8,82,86">src/draw/Renderer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/draw/Renderer.js~Renderer.html">Renderer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">2505 byte</td>
+      <td style="display: none;" data-ice="lines">90</td>
+      <td style="display: none;" data-ice="updated">2019-05-05 17:11:14 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/draw/TextRenderer.js.html#errorLines=10,11,15,22,26,6,8">src/draw/TextRenderer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/draw/TextRenderer.js~TextRenderer.html">TextRenderer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">1093 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2019-05-07 10:40:52 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/draw/behaviors/PluginRegisterBehavior.js.html#errorLines=11,4,6,8">src/draw/behaviors/PluginRegisterBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/draw/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">280 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/draw/behaviors/SetRootElementBehavior.js.html#errorLines=11,4,6,8">src/draw/behaviors/SetRootElementBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/draw/behaviors/SetRootElementBehavior.js~SetRootElementBehavior.html">SetRootElementBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">266 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/draw/index.js.html">src/draw/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">864 byte</td>
+      <td style="display: none;" data-ice="lines">29</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/base-tools/BaseToolsPalette.js.html#errorLines=11,12">src/features/base-tools/BaseToolsPalette.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/base-tools/BaseToolsPalette.js~BaseToolsPalette.html">BaseToolsPalette</a></span></td>
+      <td class="coverage"><span data-ice="coverage">60 %</span><span data-ice="coverageCount" class="coverage-count">3/5</span></td>
+      <td style="display: none;" data-ice="size">1251 byte</td>
+      <td style="display: none;" data-ice="lines">49</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/base-tools/index.js.html">src/features/base-tools/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">601 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/connect/behaviors/ConnectPreviewBehavior.js.html#errorLines=11,12,15,21,41,48,7,9">src/features/connect/behaviors/ConnectPreviewBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/connect/behaviors/ConnectPreviewBehavior.js~ConnectPreviewBehavior.html">ConnectPreviewBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">1515 byte</td>
+      <td style="display: none;" data-ice="lines">63</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/connect/index.js.html">src/features/connect/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">835 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/connect/providers/ConnectProvider.js.html#errorLines=1,13,3,4,7">src/features/connect/providers/ConnectProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/connect/providers/ConnectProvider.js~ConnectProvider.html">ConnectProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">414 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/connect/rules/ConnectSourceRule.js.html#errorLines=10,4,6">src/features/connect/rules/ConnectSourceRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/connect/rules/ConnectSourceRule.js~ConnectSourceRule.html">ConnectSourceRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">199 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/connect/rules/ConnectTargetRule.js.html#errorLines=10,4,6">src/features/connect/rules/ConnectTargetRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/connect/rules/ConnectTargetRule.js~ConnectTargetRule.html">ConnectTargetRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">199 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/behaviors/CreateConnectionBehavior.js.html#errorLines=11,14,4,6,8,9">src/features/create/behaviors/CreateConnectionBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/behaviors/CreateConnectionBehavior.js~CreateConnectionBehavior.html">CreateConnectionBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">865 byte</td>
+      <td style="display: none;" data-ice="lines">33</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/behaviors/CreateLabelBehavior.js.html#errorLines=10,11,13,16,31,35,4,6,8,9">src/features/create/behaviors/CreateLabelBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/behaviors/CreateLabelBehavior.js~CreateLabelBehavior.html">CreateLabelBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">1033 byte</td>
+      <td style="display: none;" data-ice="lines">39</td>
+      <td style="display: none;" data-ice="updated">2019-07-05 17:19:25 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/behaviors/CreateShapeBehavior.js.html#errorLines=10,12,15,21,25,31,4,6,8,9">src/features/create/behaviors/CreateShapeBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/behaviors/CreateShapeBehavior.js~CreateShapeBehavior.html">CreateShapeBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">924 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/commands/CreateConnectionCommand.js.html#errorLines=11,14,22,27,4,6,8,9">src/features/create/commands/CreateConnectionCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/commands/CreateConnectionCommand.js~CreateConnectionCommand.html">CreateConnectionCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">686 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/commands/CreateLabelCommand.js.html#errorLines=11,14,18,22,26,4,6,8,9">src/features/create/commands/CreateLabelCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/commands/CreateLabelCommand.js~CreateLabelCommand.html">CreateLabelCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">611 byte</td>
+      <td style="display: none;" data-ice="lines">30</td>
+      <td style="display: none;" data-ice="updated">2019-05-07 10:40:53 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/commands/CreateShapeCommand.js.html#errorLines=10,12,15,19,28,32,4,6,8,9">src/features/create/commands/CreateShapeCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/commands/CreateShapeCommand.js~CreateShapeCommand.html">CreateShapeCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">862 byte</td>
+      <td style="display: none;" data-ice="lines">36</td>
+      <td style="display: none;" data-ice="updated">2019-05-07 10:40:53 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/index.js.html">src/features/create/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1681 byte</td>
+      <td style="display: none;" data-ice="lines">47</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/providers/CreateProvider.js.html#errorLines=1,11,18,26,3,4,7">src/features/create/providers/CreateProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/providers/CreateProvider.js~CreateProvider.html">CreateProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">839 byte</td>
+      <td style="display: none;" data-ice="lines">36</td>
+      <td style="display: none;" data-ice="updated">2019-07-05 17:19:25 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/tools/CreateConnectionTool.js.html#errorLines=11,16,4,41,48,52,58,6,8">src/features/create/tools/CreateConnectionTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/tools/CreateConnectionTool.js~CreateConnectionTool.html">CreateConnectionTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">2241 byte</td>
+      <td style="display: none;" data-ice="lines">70</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/tools/CreateLabelTool.js.html#errorLines=10,14,18,4,6">src/features/create/tools/CreateLabelTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/tools/CreateLabelTool.js~CreateLabelTool.html">CreateLabelTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">309 byte</td>
+      <td style="display: none;" data-ice="lines">22</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/tools/CreateShapeTool.js.html#errorLines=11,18,21,26,30,4,6,8">src/features/create/tools/CreateShapeTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/tools/CreateShapeTool.js~CreateShapeTool.html">CreateShapeTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">909 byte</td>
+      <td style="display: none;" data-ice="lines">38</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/create/tools/CreateTool.js.html#errorLines=11,18,22,24,35,4,58,6,77,8">src/features/create/tools/CreateTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/create/tools/CreateTool.js~CreateTool.html">CreateTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">23 %</span><span data-ice="coverageCount" class="coverage-count">3/13</span></td>
+      <td style="display: none;" data-ice="size">1802 byte</td>
+      <td style="display: none;" data-ice="lines">81</td>
+      <td style="display: none;" data-ice="updated">2019-05-07 10:40:53 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/cursor/behaviors/CursorSetBehavior.js.html#errorLines=11,15,19,23,27,31,4,6,8">src/features/cursor/behaviors/CursorSetBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/cursor/behaviors/CursorSetBehavior.js~CursorSetBehavior.html">CursorSetBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">586 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/cursor/behaviors/CursorUnsetBehavior.js.html#errorLines=11,4,6,8">src/features/cursor/behaviors/CursorUnsetBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/cursor/behaviors/CursorUnsetBehavior.js~CursorUnsetBehavior.html">CursorUnsetBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">255 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/cursor/index.js.html">src/features/cursor/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">679 byte</td>
+      <td style="display: none;" data-ice="lines">26</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 10:47:34 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/cursor/providers/CursorProvider.js.html#errorLines=1,11,3,7">src/features/cursor/providers/CursorProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/cursor/providers/CursorProvider.js~CursorProvider.html">CursorProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">199 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/behaviors/ActivateDefaultBehavior.js.html#errorLines=11,4,6,8">src/features/edit/behaviors/ActivateDefaultBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/edit/behaviors/ActivateDefaultBehavior.js~ActivateDefaultBehavior.html">ActivateDefaultBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">273 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/behaviors/EditActivateBehavior.js.html#errorLines=11,4,6,8">src/features/edit/behaviors/EditActivateBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/edit/behaviors/EditActivateBehavior.js~EditActivateBehavior.html">EditActivateBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">296 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-05-02 13:21:50 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/behaviors/EditCompleteBehavior.js.html#errorLines=11,4,6,8">src/features/edit/behaviors/EditCompleteBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/edit/behaviors/EditCompleteBehavior.js~EditCompleteBehavior.html">EditCompleteBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">287 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/commands/EditLabelCommand.js.html#errorLines=10,13,21,32,4,6,8,9">src/features/edit/commands/EditLabelCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/edit/commands/EditLabelCommand.js~EditLabelCommand.html">EditLabelCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">1064 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 10:46:42 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/index.js.html">src/features/edit/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">943 byte</td>
+      <td style="display: none;" data-ice="lines">32</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/providers/EditProvider.js.html#errorLines=1,11,15,3,4,47,5,56,8">src/features/edit/providers/EditProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/edit/providers/EditProvider.js~EditProvider.html">EditProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">1657 byte</td>
+      <td style="display: none;" data-ice="lines">65</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 10:46:42 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/edit/tools/EditTool.js.html#errorLines=10,11,13,16,19,24,32,35,4,6,8,9">src/features/edit/tools/EditTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/edit/tools/EditTool.js~EditTool.html">EditTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/12</span></td>
+      <td style="display: none;" data-ice="size">807 byte</td>
+      <td style="display: none;" data-ice="lines">39</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:13:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/behaviors/ExportBehavior.js.html#errorLines=4">src/features/export/behaviors/ExportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/behaviors/ExportBehavior.js~ExportBehavior.html">ExportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">111 byte</td>
+      <td style="display: none;" data-ice="lines">4</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/behaviors/JsonExportBehavior.js.html#errorLines=10,13,4,6,8,9">src/features/export/behaviors/JsonExportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/behaviors/JsonExportBehavior.js~JsonExportBehavior.html">JsonExportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">575 byte</td>
+      <td style="display: none;" data-ice="lines">22</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/behaviors/MetaExportBehavior.js.html#errorLines=10,13,4,6,8,9">src/features/export/behaviors/MetaExportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/behaviors/MetaExportBehavior.js~MetaExportBehavior.html">MetaExportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">712 byte</td>
+      <td style="display: none;" data-ice="lines">24</td>
+      <td style="display: none;" data-ice="updated">2019-07-03 16:52:09 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/behaviors/SVGExportBehavior.js.html#errorLines=10,13,4,6,8,9">src/features/export/behaviors/SVGExportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/behaviors/SVGExportBehavior.js~SVGExportBehavior.html">SVGExportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">507 byte</td>
+      <td style="display: none;" data-ice="lines">20</td>
+      <td style="display: none;" data-ice="updated">2019-07-03 16:52:09 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/index.js.html">src/features/export/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1019 byte</td>
+      <td style="display: none;" data-ice="lines">30</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/providers/Exporter.js.html#errorLines=1,27,3,4,5,8">src/features/export/providers/Exporter.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/providers/Exporter.js~Exporter.html">Exporter</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">1256 byte</td>
+      <td style="display: none;" data-ice="lines">39</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/providers/JsonSerializer.js.html#errorLines=1,3">src/features/export/providers/JsonSerializer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/providers/JsonSerializer.js~JsonSerializer.html">JsonSerializer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">255 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/export/providers/SVGSerializer.js.html#errorLines=1,3,4,7">src/features/export/providers/SVGSerializer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/export/providers/SVGSerializer.js~SVGSerializer.html">SVGSerializer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">342 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-05-05 17:11:14 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/external-simulation/behaviors/SimulationStartBehavior.js.html#errorLines=11,4,6,8">src/features/external-simulation/behaviors/SimulationStartBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/external-simulation/behaviors/SimulationStartBehavior.js~SimulationStartBehavior.html">SimulationStartBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">335 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 11:09:27 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/external-simulation/behaviors/SimulationStepBehavior.js.html#errorLines=11,4,6,8">src/features/external-simulation/behaviors/SimulationStepBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/external-simulation/behaviors/SimulationStepBehavior.js~SimulationStepBehavior.html">SimulationStepBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">305 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/external-simulation/behaviors/SimulationStopBehavior.js.html#errorLines=11,4,6,8">src/features/external-simulation/behaviors/SimulationStopBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/external-simulation/behaviors/SimulationStopBehavior.js~SimulationStopBehavior.html">SimulationStopBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">305 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/external-simulation/behaviors/SimulationTerminateBehavior.js.html#errorLines=11,4,6,8">src/features/external-simulation/behaviors/SimulationTerminateBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/external-simulation/behaviors/SimulationTerminateBehavior.js~SimulationTerminateBehavior.html">SimulationTerminateBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">315 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/external-simulation/index.js.html">src/features/external-simulation/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">980 byte</td>
+      <td style="display: none;" data-ice="lines">34</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 11:09:27 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/external-simulation/providers/ExternalSimulation.js.html#errorLines=103,108,113,12,121,125,13,136,14,147,15,16,164,17,19,20,21,22,27,3,5,58,71,92,98">src/features/external-simulation/providers/ExternalSimulation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/external-simulation/providers/ExternalSimulation.js~ExternalSimulation.html">ExternalSimulation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/25</span></td>
+      <td style="display: none;" data-ice="size">5209 byte</td>
+      <td style="display: none;" data-ice="lines">174</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 11:09:27 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/factory/behaviors/FactoryResetBehavior.js.html#errorLines=11,4,6,8">src/features/factory/behaviors/FactoryResetBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/factory/behaviors/FactoryResetBehavior.js~FactoryResetBehavior.html">FactoryResetBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">260 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/factory/behaviors/FactorySetBehavior.js.html#errorLines=11,4,6,8">src/features/factory/behaviors/FactorySetBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/factory/behaviors/FactorySetBehavior.js~FactorySetBehavior.html">FactorySetBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">312 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/factory/index.js.html">src/features/factory/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">933 byte</td>
+      <td style="display: none;" data-ice="lines">29</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/factory/providers/DefaultFactory.js.html#errorLines=10,19,4,6">src/features/factory/providers/DefaultFactory.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/factory/providers/DefaultFactory.js~DefaultFactory.html">DefaultFactory</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">1217 byte</td>
+      <td style="display: none;" data-ice="lines">46</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/factory/providers/ElementFactory.js.html#errorLines=11,20,26,32,5,7">src/features/factory/providers/ElementFactory.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/factory/providers/ElementFactory.js~ElementFactory.html">ElementFactory</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">823 byte</td>
+      <td style="display: none;" data-ice="lines">39</td>
+      <td style="display: none;" data-ice="updated">2019-07-03 16:52:09 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/factory/providers/FactoryProvider.js.html#errorLines=1,19,23,27,3,31,4,5,8">src/features/factory/providers/FactoryProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/factory/providers/FactoryProvider.js~FactoryProvider.html">FactoryProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">768 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/hand/behaviors/MoveCanvasBehavior.js.html#errorLines=11,4,6,8">src/features/hand/behaviors/MoveCanvasBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/hand/behaviors/MoveCanvasBehavior.js~MoveCanvasBehavior.html">MoveCanvasBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">275 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/hand/index.js.html">src/features/hand/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">483 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/hand/providers/HandProvider.js.html#errorLines=1,12,3,4,7">src/features/hand/providers/HandProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/hand/providers/HandProvider.js~HandProvider.html">HandProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">294 byte</td>
+      <td style="display: none;" data-ice="lines">16</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/hand/tools/HandTool.js.html#errorLines=11,15,19,23,29,4,6,8">src/features/hand/tools/HandTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/hand/tools/HandTool.js~HandTool.html">HandTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">620 byte</td>
+      <td style="display: none;" data-ice="lines">33</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/handle/behaviors/HandleBehavior.js.html#errorLines=10,4,6">src/features/handle/behaviors/HandleBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/handle/behaviors/HandleBehavior.js~HandleBehavior.html">HandleBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">186 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/handle/behaviors/HandlesHideBehavior.js.html#errorLines=11,4,6,8">src/features/handle/behaviors/HandlesHideBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/handle/behaviors/HandlesHideBehavior.js~HandlesHideBehavior.html">HandlesHideBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">320 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/handle/behaviors/HandlesShowBehavior.js.html#errorLines=11,4,6,8">src/features/handle/behaviors/HandlesShowBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/handle/behaviors/HandlesShowBehavior.js~HandlesShowBehavior.html">HandlesShowBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">320 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/handle/index.js.html">src/features/handle/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">786 byte</td>
+      <td style="display: none;" data-ice="lines">27</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/handle/providers/HandleFactory.js.html#errorLines=11,5,7">src/features/handle/providers/HandleFactory.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/handle/providers/HandleFactory.js~HandleFactory.html">HandleFactory</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">904 byte</td>
+      <td style="display: none;" data-ice="lines">34</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/handle/providers/HandleProvider.js.html#errorLines=1,15,23,3,4,5,8">src/features/handle/providers/HandleProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/handle/providers/HandleProvider.js~HandleProvider.html">HandleProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">695 byte</td>
+      <td style="display: none;" data-ice="lines">28</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/import/behaviors/ImportBehavior.js.html#errorLines=12,17,22,4,6,8,9">src/features/import/behaviors/ImportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/import/behaviors/ImportBehavior.js~ImportBehavior.html">ImportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">530 byte</td>
+      <td style="display: none;" data-ice="lines">26</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/import/behaviors/JsonImportBehavior.js.html#errorLines=12,4,6,8,9">src/features/import/behaviors/JsonImportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/import/behaviors/JsonImportBehavior.js~JsonImportBehavior.html">JsonImportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">403 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/import/behaviors/MetaImportBehavior.js.html#errorLines=12,4,6,8,9">src/features/import/behaviors/MetaImportBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/import/behaviors/MetaImportBehavior.js~MetaImportBehavior.html">MetaImportBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">536 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/import/index.js.html">src/features/import/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">873 byte</td>
+      <td style="display: none;" data-ice="lines">28</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/import/providers/Importer.js.html#errorLines=1,10,15,21,3,37,4,42,5,54,6,7">src/features/import/providers/Importer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/import/providers/Importer.js~Importer.html">Importer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/12</span></td>
+      <td style="display: none;" data-ice="size">1683 byte</td>
+      <td style="display: none;" data-ice="lines">58</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/import/providers/JsonParser.js.html#errorLines=1,3,4">src/features/import/providers/JsonParser.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/import/providers/JsonParser.js~JsonParser.html">JsonParser</a></span></td>
+      <td class="coverage"><span data-ice="coverage">25 %</span><span data-ice="coverageCount" class="coverage-count">1/4</span></td>
+      <td style="display: none;" data-ice="size">597 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/keyboard-events/behaviors/AttachBehavior.js.html#errorLines=11,4,6,8">src/features/keyboard-events/behaviors/AttachBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/keyboard-events/behaviors/AttachBehavior.js~AttachBehavior.html">AttachBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">284 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/keyboard-events/behaviors/DetachBehavior.js.html#errorLines=11,4,6,8">src/features/keyboard-events/behaviors/DetachBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/keyboard-events/behaviors/DetachBehavior.js~DetachBehavior.html">DetachBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">287 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/keyboard-events/index.js.html">src/features/keyboard-events/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">427 byte</td>
+      <td style="display: none;" data-ice="lines">16</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/keyboard-events/providers/KeyboardEvents.js.html#errorLines=10,13,21,29,35,4,6,7,9">src/features/keyboard-events/providers/KeyboardEvents.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/keyboard-events/providers/KeyboardEvents.js~KeyboardEvents.html">KeyboardEvents</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">978 byte</td>
+      <td style="display: none;" data-ice="lines">39</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/layouter/index.js.html">src/features/layouter/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">270 byte</td>
+      <td style="display: none;" data-ice="lines">13</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/layouter/providers/MetaLayouter.js.html#errorLines=10,12,16,20,30">src/features/layouter/providers/MetaLayouter.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/layouter/providers/MetaLayouter.js~MetaLayouter.html">MetaLayouter</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">8298 byte</td>
+      <td style="display: none;" data-ice="lines">212</td>
+      <td style="display: none;" data-ice="updated">2019-04-01 10:10:07 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/marker/behaviors/MarkerClearBehavior.js.html#errorLines=4,6">src/features/marker/behaviors/MarkerClearBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/marker/behaviors/MarkerClearBehavior.js~MarkerClearBehavior.html">MarkerClearBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">162 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/marker/behaviors/MarkerSetBehavior.js.html#errorLines=4,6">src/features/marker/behaviors/MarkerSetBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/marker/behaviors/MarkerSetBehavior.js~MarkerSetBehavior.html">MarkerSetBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">160 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/marker/index.js.html">src/features/marker/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">506 byte</td>
+      <td style="display: none;" data-ice="lines">20</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/marker/providers/MarkerProvider.js.html#errorLines=1,10,19,24,3,4,6,7">src/features/marker/providers/MarkerProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/marker/providers/MarkerProvider.js~MarkerProvider.html">MarkerProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">897 byte</td>
+      <td style="display: none;" data-ice="lines">37</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-factory/index.js.html">src/features/meta-factory/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">358 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-factory/providers/MetaFactory.js.html#errorLines=10,13,17,30,5,56,69,7,76,83,9">src/features/meta-factory/providers/MetaFactory.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-factory/providers/MetaFactory.js~MetaFactory.html">MetaFactory</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/11</span></td>
+      <td style="display: none;" data-ice="size">2555 byte</td>
+      <td style="display: none;" data-ice="lines">90</td>
+      <td style="display: none;" data-ice="updated">2019-07-03 16:52:09 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-formalism/behaviors/PluginRegisterBehavior.js.html#errorLines=11,4,6,8">src/features/meta-formalism/behaviors/PluginRegisterBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-formalism/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">313 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-formalism/index.js.html">src/features/meta-formalism/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">736 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-formalism/providers/MetaPluginManager.js.html#errorLines=1,13,17,22,26,3,30,35,39,4,43,48,52,56,6,61,65,9">src/features/meta-formalism/providers/MetaPluginManager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-formalism/providers/MetaPluginManager.js~MetaPluginManager.html">MetaPluginManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/18</span></td>
+      <td style="display: none;" data-ice="size">1730 byte</td>
+      <td style="display: none;" data-ice="lines">69</td>
+      <td style="display: none;" data-ice="updated">2019-05-02 13:21:51 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-formalism/rules/ConnectSourceRule.js.html#errorLines=11,4,6">src/features/meta-formalism/rules/ConnectSourceRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-formalism/rules/ConnectSourceRule.js~ConnectSourceRule.html">ConnectSourceRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">481 byte</td>
+      <td style="display: none;" data-ice="lines">21</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-formalism/rules/ConnectTargetRule.js.html#errorLines=11,4,6">src/features/meta-formalism/rules/ConnectTargetRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-formalism/rules/ConnectTargetRule.js~ConnectTargetRule.html">ConnectTargetRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">814 byte</td>
+      <td style="display: none;" data-ice="lines">30</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-formalism/rules/MoveElementRule.js.html#errorLines=10,4,6">src/features/meta-formalism/rules/MoveElementRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-formalism/rules/MoveElementRule.js~MoveElementRule.html">MoveElementRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">268 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-label-editing/MetaLabelEditing.js.html#errorLines=1,10,11,13,14,15,3,31,35,41,73,90">src/features/meta-label-editing/MetaLabelEditing.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-label-editing/MetaLabelEditing.js~MetaLabelEditing.html">MetaLabelEditing</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/12</span></td>
+      <td style="display: none;" data-ice="size">2737 byte</td>
+      <td style="display: none;" data-ice="lines">94</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-label-editing/behabiors/DoubleClickBehavior.js.html#errorLines=11,4,6,8">src/features/meta-label-editing/behabiors/DoubleClickBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-label-editing/behabiors/DoubleClickBehavior.js~DoubleClickBehavior.html">DoubleClickBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">362 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-label-editing/commands/SaveLabelCommand.js.html#errorLines=12,36,39,4,42,46,6,8,9">src/features/meta-label-editing/commands/SaveLabelCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-label-editing/commands/SaveLabelCommand.js~SaveLabelCommand.html">SaveLabelCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">1176 byte</td>
+      <td style="display: none;" data-ice="lines">50</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-label-editing/index.js.html">src/features/meta-label-editing/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">747 byte</td>
+      <td style="display: none;" data-ice="lines">26</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-simulation/index.js.html">src/features/meta-simulation/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">384 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-simulation/providers/MetaSimulation.js.html#errorLines=1,3">src/features/meta-simulation/providers/MetaSimulation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-simulation/providers/MetaSimulation.js~MetaSimulation.html">MetaSimulation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">61 byte</td>
+      <td style="display: none;" data-ice="lines">6</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/MetaContextPad.js.html#errorLines=1,10,11,12,13,14,19,3,59,80">src/features/meta-tools/MetaContextPad.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-tools/MetaContextPad.js~MetaContextPad.html">MetaContextPad</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">3876 byte</td>
+      <td style="display: none;" data-ice="lines">123</td>
+      <td style="display: none;" data-ice="updated">2019-05-02 13:21:51 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/MetaPalette.js.html#errorLines=1,11,15,28,3,4,41,47,6,7,8">src/features/meta-tools/MetaPalette.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-tools/MetaPalette.js~MetaPalette.html">MetaPalette</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/11</span></td>
+      <td style="display: none;" data-ice="size">1506 byte</td>
+      <td style="display: none;" data-ice="lines">54</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/MetaRules.js.html#errorLines=4,6">src/features/meta-tools/MetaRules.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-tools/MetaRules.js~MetaRules.html">MetaRules</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">2/4</span></td>
+      <td style="display: none;" data-ice="size">923 byte</td>
+      <td style="display: none;" data-ice="lines">40</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/behaviors/PluginRegisterBehavior.js.html#errorLines=10,13,4,6,8,9">src/features/meta-tools/behaviors/PluginRegisterBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-tools/behaviors/PluginRegisterBehavior.js~PluginRegisterBehavior.html">PluginRegisterBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">444 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/index.js.html">src/features/meta-tools/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1185 byte</td>
+      <td style="display: none;" data-ice="lines">38</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/rules/ConnectionCreateRule.js.html#errorLines=10,4,6">src/features/meta-tools/rules/ConnectionCreateRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-tools/rules/ConnectionCreateRule.js~ConnectionCreateRule.html">ConnectionCreateRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">202 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/meta-tools/rules/ConnectionStartRule.js.html#errorLines=11,4,6">src/features/meta-tools/rules/ConnectionStartRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/meta-tools/rules/ConnectionStartRule.js~ConnectionStartRule.html">ConnectionStartRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">202 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/behaviors/MoveBehavior.js.html#errorLines=11,16,4,6,8">src/features/move/behaviors/MoveBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/behaviors/MoveBehavior.js~MoveBehavior.html">MoveBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">477 byte</td>
+      <td style="display: none;" data-ice="lines">21</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/behaviors/MovePreviewBehavior.js.html#errorLines=11,15,19,4,6,8">src/features/move/behaviors/MovePreviewBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/behaviors/MovePreviewBehavior.js~MovePreviewBehavior.html">MovePreviewBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">427 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/commands/MoveByCommand.js.html#errorLines=10,4,6">src/features/move/commands/MoveByCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/commands/MoveByCommand.js~MoveByCommand.html">MoveByCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">529 byte</td>
+      <td style="display: none;" data-ice="lines">21</td>
+      <td style="display: none;" data-ice="updated">2019-07-04 07:16:52 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/commands/MoveElementsCommand.js.html#errorLines=10,11,13,16,33,37,4,41,45,6,63,69,74,8,84,9">src/features/move/commands/MoveElementsCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/commands/MoveElementsCommand.js~MoveElementsCommand.html">MoveElementsCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/16</span></td>
+      <td style="display: none;" data-ice="size">2997 byte</td>
+      <td style="display: none;" data-ice="lines">97</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/commands/MoveToCommand.js.html#errorLines=10,4,6">src/features/move/commands/MoveToCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/commands/MoveToCommand.js~MoveToCommand.html">MoveToCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">555 byte</td>
+      <td style="display: none;" data-ice="lines">21</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/index.js.html">src/features/move/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">843 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/providers/MoveProvider.js.html#errorLines=1,3,4,7">src/features/move/providers/MoveProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/providers/MoveProvider.js~MoveProvider.html">MoveProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">740 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:17:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/move/rules/MoveElementsRule.js.html#errorLines=10,4,6">src/features/move/rules/MoveElementsRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/move/rules/MoveElementsRule.js~MoveElementsRule.html">MoveElementsRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">198 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/AbsoluteOrientation.js.html#errorLines=11,4,6,8">src/features/orientation/AbsoluteOrientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/AbsoluteOrientation.js~AbsoluteOrientation.html">AbsoluteOrientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">348 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/CardinalOrientation.js.html#errorLines=14,35,4,6,64,68,72,76,8,80,84,88,92">src/features/orientation/CardinalOrientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/CardinalOrientation.js~CardinalOrientation.html">CardinalOrientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/13</span></td>
+      <td style="display: none;" data-ice="size">2303 byte</td>
+      <td style="display: none;" data-ice="lines">96</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/CenterOrientation.js.html#errorLines=10,4,6">src/features/orientation/CenterOrientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/CenterOrientation.js~CenterOrientation.html">CenterOrientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">320 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/FigureOrientation.js.html#errorLines=10,4,6">src/features/orientation/FigureOrientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/FigureOrientation.js~FigureOrientation.html">FigureOrientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">345 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/Orientation.js.html#errorLines=6,7,8">src/features/orientation/Orientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/Orientation.js~Orientation.html">Orientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">40 %</span><span data-ice="coverageCount" class="coverage-count">2/5</span></td>
+      <td style="display: none;" data-ice="size">289 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/OrientationFactory.js.html#errorLines=11,21,9">src/features/orientation/OrientationFactory.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/OrientationFactory.js~OrientationFactory.html">OrientationFactory</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">1255 byte</td>
+      <td style="display: none;" data-ice="lines">41</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/RadialOrientation.js.html#errorLines=12,15,26,4,55,59,6,63,67,71,75,79,8,83">src/features/orientation/RadialOrientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/RadialOrientation.js~RadialOrientation.html">RadialOrientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/14</span></td>
+      <td style="display: none;" data-ice="size">2077 byte</td>
+      <td style="display: none;" data-ice="lines">87</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/RelativeOrientation.js.html#errorLines=12,4,6,8,9">src/features/orientation/RelativeOrientation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/orientation/RelativeOrientation.js~RelativeOrientation.html">RelativeOrientation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">411 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/orientation/index.js.html">src/features/orientation/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">202 byte</td>
+      <td style="display: none;" data-ice="lines">11</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/pointer/behaviors/SelectBehavior.js.html#errorLines=11,4,6,8">src/features/pointer/behaviors/SelectBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/pointer/behaviors/SelectBehavior.js~SelectBehavior.html">SelectBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">453 byte</td>
+      <td style="display: none;" data-ice="lines">21</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/pointer/index.js.html">src/features/pointer/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">745 byte</td>
+      <td style="display: none;" data-ice="lines">32</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/pointer/providers/PointerProvider.js.html#errorLines=1,3">src/features/pointer/providers/PointerProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/pointer/providers/PointerProvider.js~PointerProvider.html">PointerProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">63 byte</td>
+      <td style="display: none;" data-ice="lines">7</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/pointer/tools/PointerTool.js.html#errorLines=10,101,106,11,12,127,14,15,16,19,25,28,5,51,7,78,9,95">src/features/pointer/tools/PointerTool.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/pointer/tools/PointerTool.js~PointerTool.html">PointerTool</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/18</span></td>
+      <td style="display: none;" data-ice="size">5028 byte</td>
+      <td style="display: none;" data-ice="lines">148</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/preview/behaviors/PreviewClearBehavior.js.html#errorLines=12,4,6,8,9">src/features/preview/behaviors/PreviewClearBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/preview/behaviors/PreviewClearBehavior.js~PreviewClearBehavior.html">PreviewClearBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">368 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/preview/behaviors/PreviewInitBehavior.js.html#errorLines=12,17,4,6,8,9">src/features/preview/behaviors/PreviewInitBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/preview/behaviors/PreviewInitBehavior.js~PreviewInitBehavior.html">PreviewInitBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">674 byte</td>
+      <td style="display: none;" data-ice="lines">27</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/preview/behaviors/PreviewMoveBehavior.js.html#errorLines=12,4,6,8,9">src/features/preview/behaviors/PreviewMoveBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/preview/behaviors/PreviewMoveBehavior.js~PreviewMoveBehavior.html">PreviewMoveBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">579 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/preview/index.js.html">src/features/preview/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">588 byte</td>
+      <td style="display: none;" data-ice="lines">20</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/preview/providers/PreviewProvider.js.html#errorLines=11,14,6,61,68,8,9">src/features/preview/providers/PreviewProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/preview/providers/PreviewProvider.js~PreviewProvider.html">PreviewProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">2206 byte</td>
+      <td style="display: none;" data-ice="lines">78</td>
+      <td style="display: none;" data-ice="updated">2019-06-03 08:23:17 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/remove/behaviors/KeypressBehavior.js.html#errorLines=10,11,14,6,8">src/features/remove/behaviors/KeypressBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/remove/behaviors/KeypressBehavior.js~KeypressBehavior.html">KeypressBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">735 byte</td>
+      <td style="display: none;" data-ice="lines">30</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/remove/behaviors/RemoveElementsBehavior.js.html#errorLines=11,4,6,8">src/features/remove/behaviors/RemoveElementsBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/remove/behaviors/RemoveElementsBehavior.js~RemoveElementsBehavior.html">RemoveElementsBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">275 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/remove/commands/RemoveElementsCommand.js.html#errorLines=10,13,18,32,4,45,53,6,8">src/features/remove/commands/RemoveElementsCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/remove/commands/RemoveElementsCommand.js~RemoveElementsCommand.html">RemoveElementsCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">1744 byte</td>
+      <td style="display: none;" data-ice="lines">67</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:31 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/remove/index.js.html">src/features/remove/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">683 byte</td>
+      <td style="display: none;" data-ice="lines">25</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/remove/providers/RemoveProvider.js.html#errorLines=1,3,4,7">src/features/remove/providers/RemoveProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/remove/providers/RemoveProvider.js~RemoveProvider.html">RemoveProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">226 byte</td>
+      <td style="display: none;" data-ice="lines">11</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/resize/behaviors/ResizeElementBehavior.js.html#errorLines=10,101,11,12,15,19,29,4,6,8,9,91">src/features/resize/behaviors/ResizeElementBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/resize/behaviors/ResizeElementBehavior.js~ResizeElementBehavior.html">ResizeElementBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/12</span></td>
+      <td style="display: none;" data-ice="size">3829 byte</td>
+      <td style="display: none;" data-ice="lines">106</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:13:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/resize/commands/ResizeElementCommand.js.html#errorLines=10,13,4,6">src/features/resize/commands/ResizeElementCommand.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/resize/commands/ResizeElementCommand.js~ResizeElementCommand.html">ResizeElementCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">220 byte</td>
+      <td style="display: none;" data-ice="lines">16</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/resize/index.js.html">src/features/resize/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">700 byte</td>
+      <td style="display: none;" data-ice="lines">26</td>
+      <td style="display: none;" data-ice="updated">2019-07-02 15:13:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/resize/providers/ResizeProvider.js.html#errorLines=1,12,3,4,7">src/features/resize/providers/ResizeProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/resize/providers/ResizeProvider.js~ResizeProvider.html">ResizeProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">450 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/resize/rules/ResizeElementRule.js.html#errorLines=10,4,6">src/features/resize/rules/ResizeElementRule.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/resize/rules/ResizeElementRule.js~ResizeElementRule.html">ResizeElementRule</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">227 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/rubber-band/behaviors/LeaveCanvasBehavior.js.html#errorLines=10,4,6">src/features/rubber-band/behaviors/LeaveCanvasBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/rubber-band/behaviors/LeaveCanvasBehavior.js~LeaveCanvasBehavior.html">LeaveCanvasBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">201 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/rubber-band/behaviors/PreviewBehavior.js.html#errorLines=10,11,14,20,29,35,43,5,7,9">src/features/rubber-band/behaviors/PreviewBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/rubber-band/behaviors/PreviewBehavior.js~PreviewBehavior.html">PreviewBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">1303 byte</td>
+      <td style="display: none;" data-ice="lines">59</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/rubber-band/behaviors/SelectSurroundedBehavior.js.html#errorLines=10,11,14,21,5,7,9">src/features/rubber-band/behaviors/SelectSurroundedBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/rubber-band/behaviors/SelectSurroundedBehavior.js~SelectSurroundedBehavior.html">SelectSurroundedBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">652 byte</td>
+      <td style="display: none;" data-ice="lines">25</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/rubber-band/index.js.html">src/features/rubber-band/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">693 byte</td>
+      <td style="display: none;" data-ice="lines">24</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/rubber-band/providers/RubberBandProvider.js.html#errorLines=1,3,4">src/features/rubber-band/providers/RubberBandProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/rubber-band/providers/RubberBandProvider.js~RubberBandProvider.html">RubberBandProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">122 byte</td>
+      <td style="display: none;" data-ice="lines">7</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/behaviors/MoveElementsBehavior.js.html#errorLines=11,4,6,8">src/features/selection/behaviors/MoveElementsBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/behaviors/MoveElementsBehavior.js~MoveElementsBehavior.html">MoveElementsBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">272 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/behaviors/SelectAllBehavior.js.html#errorLines=11,4,6,8">src/features/selection/behaviors/SelectAllBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/behaviors/SelectAllBehavior.js~SelectAllBehavior.html">SelectAllBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">269 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:31 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/behaviors/SelectedBehavior.js.html#errorLines=11,19,4,6,8">src/features/selection/behaviors/SelectedBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/behaviors/SelectedBehavior.js~SelectedBehavior.html">SelectedBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">650 byte</td>
+      <td style="display: none;" data-ice="lines">27</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/behaviors/SelectionAddBehavior.js.html#errorLines=11,4,6,8">src/features/selection/behaviors/SelectionAddBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/behaviors/SelectionAddBehavior.js~SelectionAddBehavior.html">SelectionAddBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">297 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/behaviors/SelectionClearBehavior.js.html#errorLines=11,4,6,8">src/features/selection/behaviors/SelectionClearBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/behaviors/SelectionClearBehavior.js~SelectionClearBehavior.html">SelectionClearBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">270 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/behaviors/SelectionRemoveBehavior.js.html#errorLines=11,4,6,8">src/features/selection/behaviors/SelectionRemoveBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/behaviors/SelectionRemoveBehavior.js~SelectionRemoveBehavior.html">SelectionRemoveBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">303 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/index.js.html">src/features/selection/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1589 byte</td>
+      <td style="display: none;" data-ice="lines">41</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 15:44:31 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/providers/SelectionHandlesProvider.js.html#errorLines=1,10,3,4,5,53,59,6,7">src/features/selection/providers/SelectionHandlesProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/providers/SelectionHandlesProvider.js~SelectionHandlesProvider.html">SelectionHandlesProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">1669 byte</td>
+      <td style="display: none;" data-ice="lines">65</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/selection/providers/SelectionProvider.js.html#errorLines=10,11,12,13,18,22,25,28,32,36,46,5,56,7,80,88,9">src/features/selection/providers/SelectionProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/selection/providers/SelectionProvider.js~SelectionProvider.html">SelectionProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/17</span></td>
+      <td style="display: none;" data-ice="size">2856 byte</td>
+      <td style="display: none;" data-ice="lines">107</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/simulation-manager/behaviors/SimulationStartBehavior.js.html#errorLines=11,4,6,8">src/features/simulation-manager/behaviors/SimulationStartBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/simulation-manager/behaviors/SimulationStartBehavior.js~SimulationStartBehavior.html">SimulationStartBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">320 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 11:09:27 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/simulation-manager/index.js.html">src/features/simulation-manager/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">451 byte</td>
+      <td style="display: none;" data-ice="lines">19</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 11:09:27 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/simulation-manager/providers/SimulationManager.js.html#errorLines=1,10,14,18,23,28,3,34,4,5,6,7">src/features/simulation-manager/providers/SimulationManager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/simulation-manager/providers/SimulationManager.js~SimulationManager.html">SimulationManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/12</span></td>
+      <td style="display: none;" data-ice="size">873 byte</td>
+      <td style="display: none;" data-ice="lines">38</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 11:09:27 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/snapping/behaviors/SnapBehavior.js.html#errorLines=10,13,25,32,5,7,9">src/features/snapping/behaviors/SnapBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/snapping/behaviors/SnapBehavior.js~SnapBehavior.html">SnapBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">900 byte</td>
+      <td style="display: none;" data-ice="lines">36</td>
+      <td style="display: none;" data-ice="updated">2019-07-07 14:35:00 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/snapping/behaviors/SnappingClearBehavior.js.html#errorLines=11,4,6,8">src/features/snapping/behaviors/SnappingClearBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/snapping/behaviors/SnappingClearBehavior.js~SnappingClearBehavior.html">SnappingClearBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">264 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/snapping/behaviors/SnappingInitBehavior.js.html#errorLines=11,4,6,8">src/features/snapping/behaviors/SnappingInitBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/snapping/behaviors/SnappingInitBehavior.js~SnappingInitBehavior.html">SnappingInitBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">263 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/snapping/index.js.html">src/features/snapping/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">573 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/snapping/providers/SnappingProvider.js.html#errorLines=10,11,13,16,30,5,54,7,9">src/features/snapping/providers/SnappingProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/snapping/providers/SnappingProvider.js~SnappingProvider.html">SnappingProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
+      <td style="display: none;" data-ice="size">1625 byte</td>
+      <td style="display: none;" data-ice="lines">60</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/zoom/behaviors/ZoomInBehavior.js.html#errorLines=11,4,6,8">src/features/zoom/behaviors/ZoomInBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/zoom/behaviors/ZoomInBehavior.js~ZoomInBehavior.html">ZoomInBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">248 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 16:21:15 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/zoom/behaviors/ZoomOutBehavior.js.html#errorLines=11,4,6,8">src/features/zoom/behaviors/ZoomOutBehavior.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/zoom/behaviors/ZoomOutBehavior.js~ZoomOutBehavior.html">ZoomOutBehavior</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">250 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 16:21:15 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/zoom/index.js.html">src/features/zoom/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">468 byte</td>
+      <td style="display: none;" data-ice="lines">20</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 16:21:15 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/features/zoom/providers/ZoomProvider.js.html#errorLines=1,11,3,4,7">src/features/zoom/providers/ZoomProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/features/zoom/providers/ZoomProvider.js~ZoomProvider.html">ZoomProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
+      <td style="display: none;" data-ice="size">278 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2019-04-07 16:21:15 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/util/Geometry.js.html#errorLines=1,11,15,3,44,57,64,7,73,93">src/util/Geometry.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/util/Geometry.js~Geometry.html">Geometry</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">3553 byte</td>
+      <td style="display: none;" data-ice="lines">118</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/util/PathParser.js.html#errorLines=1,102,103,106,11,110,115,119,129,137,14,146,153,3,4,5,8,9">src/util/PathParser.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/util/PathParser.js~PathParser.html">PathParser</a></span></td>
+      <td class="coverage"><span data-ice="coverage">5 %</span><span data-ice="coverageCount" class="coverage-count">1/19</span></td>
+      <td style="display: none;" data-ice="size">6477 byte</td>
+      <td style="display: none;" data-ice="lines">205</td>
+      <td style="display: none;" data-ice="updated">2019-04-04 21:26:35 (UTC)</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
